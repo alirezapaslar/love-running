@@ -75,7 +75,7 @@ h2 {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center;
+    background: url('../images/hero-image.webp') no-repeat center center;
     /* animates the hero image when loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
@@ -181,7 +181,7 @@ hr {
     height: 300px;
     width: 300px;
     border-style: solid;
-    border-color: #cccc;
+    border-color: #ccc;
     padding: 30px;
     border-width: 1px;
     border-radius: 50%;
@@ -189,11 +189,11 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url(../images/ethos-center-image.jpg); no-repeat center center;
-    height: 100%;
-    
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+        height: 100%;
     border-radius: 50%;
 }
+
 #meetup-times {
     background-image: url(../images/dublin-city.webp);
     background-repeat: no-repeat;
@@ -207,7 +207,6 @@ hr {
     background-color: rgba(255, 255, 255, 0.8);
     /* semi-transparent white background */
     padding: 20px;
-    margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     /* soft shadow around panels */
@@ -228,4 +227,23 @@ hr {
 
 #meetup-times h2 {
     color: #F5F5F5;
+}
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
 }
