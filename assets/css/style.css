@@ -258,3 +258,46 @@ footer {
 #photos > img {
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+
+    /* Set the width of the club ethos section to 65% and height to 1200px */
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+        /* Center the content */
+    }
+
+        /* Change padding for the welcome message */
+        #welcome {
+            padding: 20px 0;
+            /* Adjust as necessary */
+            margin: 0;
+            /* Remove vertical gap */
+        }
+    
+        /* Adjust the left-about and right-about divs */
+        #left-about,
+        #right-about {
+            width: 100%;
+            float: left;
+            padding: 0;
+            /* Override desktop-level padding */
+        }
+    
+        /* Push the center-about image below the text content */
+        #center-about { 
+            clear: both;
+            /* Make the content drop below the left-about and right-about divs */
+            width: 100%;
+            float: left;
+            padding: 0;
+            /* Override desktop-level padding */
+        }
+    
+        /* Hide the horizontal rule under each of the content headers for the club ethos */
+        hr {
+            display: none;
+        }
+        }
