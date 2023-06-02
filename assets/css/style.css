@@ -190,7 +190,7 @@ hr {
 
 #circle-cover-bg {
     background: url('../images/ethos-center-image.jpg') no-repeat center center;
-        height: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -255,7 +255,7 @@ footer {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
@@ -269,35 +269,48 @@ footer {
         /* Center the content */
     }
 
-        /* Change padding for the welcome message */
-        #welcome {
-            padding: 20px 0;
-            /* Adjust as necessary */
-            margin: 0;
-            /* Remove vertical gap */
-        }
-    
-        /* Adjust the left-about and right-about divs */
-        #left-about,
-        #right-about {
-            width: 100%;
+    /* Change padding for the welcome message */
+    #welcome {
+        padding: 20px 0;
+        /* Adjust as necessary */
+        margin: 0;
+        /* Remove vertical gap */
+    }
+
+    /* Adjust the left-about and right-about divs */
+    #left-about,
+    #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+        /* Override desktop-level padding */
+    }
+
+    /* Push the center-about image below the text content */
+    #center-about {
+        clear: both;
+        /* Make the content drop below the left-about and right-about divs */
+        width: 100%;
+        float: left;
+        padding: 0;
+        /* Override desktop-level padding */
+    }
+
+    /* Hide the horizontal rule under each of the content headers for the club ethos */
+    hr {
+        display: none;
+    }
+}
+
+
+    @media screen and (max-width: 950px) {
+
+        /* Adjust the navigation menu */
+        #menu {
+            clear: left;
             float: left;
-            padding: 0;
-            /* Override desktop-level padding */
+            margin-left: 30px;
+            margin-bottom: 20px;
+            line-height: 25px;
         }
-    
-        /* Push the center-about image below the text content */
-        #center-about { 
-            clear: both;
-            /* Make the content drop below the left-about and right-about divs */
-            width: 100%;
-            float: left;
-            padding: 0;
-            /* Override desktop-level padding */
-        }
-    
-        /* Hide the horizontal rule under each of the content headers for the club ethos */
-        hr {
-            display: none;
-        }
-        }
+    }
