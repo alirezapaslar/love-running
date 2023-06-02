@@ -303,14 +303,48 @@ footer {
 }
 
 
-    @media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
 
-        /* Adjust the navigation menu */
-        #menu {
-            clear: left;
-            float: left;
-            margin-left: 30px;
-            margin-bottom: 20px;
-            line-height: 25px;
-        }
+    /* Adjust the navigation menu */
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
     }
+}
+
+@media screen and (max-width: 950px) {
+
+    /* Adjust the main image's cover text */
+    #cover-text {
+        text-align: left;
+    }
+
+    /* Adjust the club ethos section */
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Adjust the left and right about headings */
+    .left-about-heading,
+    .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2,
+    .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust the paragraph content */
+        .left-about-heading p,
+        .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
