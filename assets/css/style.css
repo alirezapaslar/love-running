@@ -194,7 +194,7 @@ hr {
     border-radius: 50%;
 }
 
-#meetup-times {
+#times {
     background-image: url(../images/dublin-city.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,7 +212,7 @@ hr {
     /* soft shadow around panels */
 }
 
-#meetup-times .meetup-panel {
+#times .meetup-panel {
     color: #F5F5F5;
     background: rgba(0, 0, 0, 0.6);
     width: 20%;
@@ -225,7 +225,7 @@ hr {
     box-sizing: border-box;
 }
 
-#meetup-times h2 {
+#times h2 {
     color: #F5F5F5;
 }
 
@@ -296,11 +296,18 @@ footer {
         /* Override desktop-level padding */
     }
 
-    /* Hide the horizontal rule under each of the content headers for the club ethos */
+    #times .meetup-panel {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
 }
+
 
 
 @media screen and (max-width: 950px) {
@@ -313,9 +320,6 @@ footer {
         margin-bottom: 20px;
         line-height: 25px;
     }
-}
-
-@media screen and (max-width: 950px) {
 
     /* Adjust the main image's cover text */
     #cover-text {
@@ -342,9 +346,21 @@ footer {
     }
 
     /* Adjust the paragraph content */
-        .left-about-heading p,
-        .right-about-heading p {
+    .left-about-heading p,
+    .right-about-heading p {
         text-align: center;
         padding: 0 20px;
     }
+}
+
+#photos {
+    column-count: 3;
+}
+
+
+@media screen and (max-width: 800px) {
+    #photos {
+column-count: 2;
+    }
+    
 }
